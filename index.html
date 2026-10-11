@@ -1327,10 +1327,13 @@
         <div class="hero-text">
           <span class="eyebrow t-eyebrow">Data · Machine Learning · AI</span>
           <h1 class="t-display-xl">A data scientist who <em class="accent">builds</em>, end to end.</h1>
-          <p class="lede t-body-lg">I take a problem from <strong>raw data</strong> all the way to a model people can
-            actually use cleaning, modelling, and the engineering in between.</p>
-          <p class="lede t-body">A frontend internship taught me what happens once a model has to face a real user. That
-            perspective shapes everything I build now.</p>
+          <p class="lede t-body-lg">Data scientist and Python developer, combining applied <strong>machine learning and
+              statistics</strong> with a software engineering background.</p>
+          <p class="lede t-body">Experienced across the modelling lifecycle — feature engineering, model selection,
+            evaluation under class imbalance, and deployment. Built an end-to-end admissions classifier reaching
+            <strong>ROC-AUC 0.8805</strong> across five benchmarked algorithms, and implemented a DCGAN from scratch to
+            stable convergence over <strong>100+ epochs</strong>. Strong in Python, SQL, scikit-learn, XGBoost,
+            TensorFlow and Flask.</p>
           <p class="hero-meta">Coventry, UK · MSc Data Science, Coventry University · Ex SDE</p>
           <div class="cta-row">
             <a href="#work" class="btn btn-accent">See the work <span class="arw">→</span></a>
@@ -1342,8 +1345,8 @@
           <div class="portrait">
             <img src="PS.png" alt="Portrait of Priyankkumar Solanki" width="440" height="440">
           </div>
-          <span class="pill pill-a">300+ problems solved</span>
-          <span class="pill pill-b">4th · ML hackathon</span>
+          <span class="pill pill-a">ROC-AUC 0.8805</span>
+          <span class="pill pill-b">DCGAN · 100+ epochs</span>
         </div>
       </div>
     </div>
@@ -1377,7 +1380,7 @@
             <span class="stat-label t-body-sm">DSA problems solved</span>
           </div>
           <div class="stat-tile">
-            <div class="stat-num" data-count="5" data-suffix="">0</div>
+            <div class="stat-num" data-count="6" data-suffix="">0</div>
             <span class="stat-label t-body-sm">End-to-end ML/DL projects</span>
           </div>
           <div class="stat-tile">
@@ -1471,6 +1474,7 @@
 
       <div class="projects-filter">
         <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="LLM">LLM &amp; RAG</button>
         <button class="filter-btn" data-filter="DL">Deep learning</button>
         <button class="filter-btn" data-filter="ML">Machine learning</button>
         <button class="filter-btn" data-filter="Automation">Automation</button>
@@ -1479,8 +1483,35 @@
 
       <div class="projects-list">
 
-        <article class="project-card" data-category="DL">
+        <article class="project-card" data-category="LLM">
           <div class="project-num">01</div>
+          <div class="project-body">
+            <div class="project-topline">
+              <div>
+                <span class="project-kicker t-caption">Flagship · LLM · RAG</span>
+                <h3 class="t-card-title">Financial Report Analyzer</h3>
+              </div>
+              <a href="https://github.com/PriyankkumarSolanki/financial-report-analyzer" target="_blank"
+                rel="noopener" class="project-link">Code ↗</a>
+            </div>
+            <p class="pblock t-body-sm"><strong>Problem.</strong> Company 10-K annual reports run hundreds of pages.
+              Comparing KPIs across filings, or answering a specific question about one, is slow and error-prone by hand.
+            </p>
+            <p class="pblock t-body-sm"><strong>Approach.</strong> A production-style Retrieval-Augmented Generation app.
+              PDFs are converted to Markdown, chunked, embedded locally (fastembed / bge-small), and stored in Postgres +
+              pgvector. A hybrid retriever (vector + keyword) feeds Google Gemini to extract KPIs into structured JSON at
+              ingestion and to answer live questions through an AI-analyst chat — FastAPI backend, Streamlit dashboard,
+              containerised with Docker and Kubernetes, and tested in CI.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span><span class="tech-badge">FastAPI</span><span
+                class="tech-badge">Streamlit</span><span class="tech-badge">Gemini</span><span
+                class="tech-badge">pgvector</span><span class="tech-badge">Docker</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="DL">
+          <div class="project-num">02</div>
           <div class="project-body">
             <div class="project-topline">
               <div>
@@ -1503,7 +1534,7 @@
         </article>
 
         <article class="project-card" data-category="ML">
-          <div class="project-num">02</div>
+          <div class="project-num">03</div>
           <div class="project-body">
             <div class="project-topline">
               <div>
@@ -1526,7 +1557,7 @@
         </article>
 
         <article class="project-card" data-category="ML">
-          <div class="project-num">03</div>
+          <div class="project-num">04</div>
           <div class="project-body">
             <div class="project-topline">
               <div>
@@ -1548,7 +1579,7 @@
         </article>
 
         <article class="project-card" data-category="Automation">
-          <div class="project-num">04</div>
+          <div class="project-num">05</div>
           <div class="project-body">
             <div class="project-topline">
               <div>
@@ -1569,7 +1600,7 @@
         </article>
 
         <article class="project-card" data-category="Data">
-          <div class="project-num">05</div>
+          <div class="project-num">06</div>
           <div class="project-body">
             <div class="project-topline">
               <div>
