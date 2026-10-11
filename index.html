@@ -1329,11 +1329,12 @@
           <h1 class="t-display-xl">A data scientist who <em class="accent">builds</em>, end to end.</h1>
           <p class="lede t-body-lg">Data scientist and Python developer, combining applied <strong>machine learning and
               statistics</strong> with a software engineering background.</p>
-          <p class="lede t-body">Experienced across the modelling lifecycle — feature engineering, model selection,
+          <p class="lede t-body">Experienced across the modelling lifecycle; feature engineering, model selection,
             evaluation under class imbalance, and deployment. Built an end-to-end admissions classifier reaching
             <strong>ROC-AUC 0.8805</strong> across five benchmarked algorithms, and implemented a DCGAN from scratch to
             stable convergence over <strong>100+ epochs</strong>. Strong in Python, SQL, scikit-learn, XGBoost,
-            TensorFlow and Flask.</p>
+            TensorFlow and Flask.
+          </p>
           <p class="hero-meta">Coventry, UK · MSc Data Science, Coventry University · Ex SDE</p>
           <div class="cta-row">
             <a href="#work" class="btn btn-accent">See the work <span class="arw">→</span></a>
@@ -1491,15 +1492,19 @@
                 <span class="project-kicker t-caption">Flagship · LLM · RAG</span>
                 <h3 class="t-card-title">Financial Report Analyzer</h3>
               </div>
-              <a href="https://github.com/PriyankkumarSolanki/financial-report-analyzer" target="_blank"
-                rel="noopener" class="project-link">Code ↗</a>
+              <a href="https://github.com/PriyankkumarSolanki/financial-report-analyzer" target="_blank" rel="noopener"
+                class="project-link">Code ↗</a>
             </div>
             <p class="pblock t-body-sm"><strong>Problem.</strong> Company 10-K annual reports run hundreds of pages.
-              Comparing KPIs across filings, or answering a specific question about one, is slow and error-prone by hand.
+              Comparing KPIs across filings, or answering a specific question about one, is slow and error-prone by
+              hand.
             </p>
-            <p class="pblock t-body-sm"><strong>Approach.</strong> A production-style Retrieval-Augmented Generation app.
-              PDFs are converted to Markdown, chunked, embedded locally (fastembed / bge-small), and stored in Postgres +
-              pgvector. A hybrid retriever (vector + keyword) feeds Google Gemini to extract KPIs into structured JSON at
+            <p class="pblock t-body-sm"><strong>Approach.</strong> A production-style Retrieval-Augmented Generation
+              app.
+              PDFs are converted to Markdown, chunked, embedded locally (fastembed / bge-small), and stored in Postgres
+              +
+              pgvector. A hybrid retriever (vector + keyword) feeds Google Gemini to extract KPIs into structured JSON
+              at
               ingestion and to answer live questions through an AI-analyst chat — FastAPI backend, Streamlit dashboard,
               containerised with Docker and Kubernetes, and tested in CI.</p>
             <div class="tech-stack">
